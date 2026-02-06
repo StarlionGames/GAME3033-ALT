@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="AbsoluteLoserTraining"
+run/main_scene="uid://hioj5entsuap"
 config/features=PackedStringArray("4.6", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://civlqn7july1c"
 
 [dotnet]
 
