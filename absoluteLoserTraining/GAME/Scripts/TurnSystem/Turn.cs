@@ -3,5 +3,12 @@ using System;
 
 public class Turn
 {
-	// leaving this empty for now	
+	public Turn()
+	{
+
+	}
+	
+	public bool TurnCompleted = false;
+
+	public void TurnActionChosen() => TurnCompleted = true;
 }
