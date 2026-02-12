@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "AbsoluteLoserTraining": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\fangi\\Downloads\\Godot_v4.6-stable_mono_win64\\Godot_v4.6-stable_mono_win64\\Godot_v4.6-stable_mono_win64.exe",
+      "workingDirectory": ".",
+      "nativeDebugging": true
+    }
+  }
+}
