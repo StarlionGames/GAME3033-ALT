@@ -2,12 +2,12 @@ using Godot;
 using System;
 using System.Collections.Generic;
 
-public class Week
+public class Week : TimeUnit
 {
 	public List<Turn> TurnsInWeek = new List<Turn>();
 
-	public Week()
+	public Week(int number)
 	{
-
+		Number = number;
 	}
 }

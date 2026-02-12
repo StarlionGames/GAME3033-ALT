@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Month.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GAME\\Scripts\\TurnSystem\\Month.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|c:\\users\\fangi\\documents\\github\\game3033-alt\\absolutelosertraining\\game\\scripts\\turnsystem\\week.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|solutionrelative:game\\scripts\\turnsystem\\week.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Week.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GAME\\Scripts\\TurnSystem\\Week.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|c:\\users\\fangi\\documents\\github\\game3033-alt\\absolutelosertraining\\game\\scripts\\turnsystem\\turn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|solutionrelative:game\\scripts\\turnsystem\\turn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Timekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GAME\\Scripts\\TurnSystem\\Timekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|c:\\users\\fangi\\documents\\github\\game3033-alt\\absolutelosertraining\\game\\scripts\\turnsystem\\month.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|solutionrelative:game\\scripts\\turnsystem\\month.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\Core\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GAME\\Scripts\\Core\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|c:\\users\\fangi\\documents\\github\\game3033-alt\\absolutelosertraining\\game\\scripts\\core\\timeunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|solutionrelative:game\\scripts\\core\\timeunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|c:\\users\\fangi\\documents\\github\\game3033-alt\\absolutelosertraining\\game\\scripts\\turnsystem\\timekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|solutionrelative:game\\scripts\\turnsystem\\timekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|c:\\users\\fangi\\documents\\github\\game3033-alt\\absolutelosertraining\\game\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EDB08A-E633-43C0-8751-570F0D00F0FD}|AbsoluteLoserTraining.csproj|solutionrelative:game\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,30 +34,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Month.cs",
-              "DocumentMoniker": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Month.cs",
-              "RelativeDocumentMoniker": "GAME\\Scripts\\TurnSystem\\Month.cs",
-              "ToolTip": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Month.cs",
-              "RelativeToolTip": "GAME\\Scripts\\TurnSystem\\Month.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "TimeUnit.cs",
+              "DocumentMoniker": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\Core\\TimeUnit.cs",
+              "RelativeDocumentMoniker": "GAME\\Scripts\\Core\\TimeUnit.cs",
+              "ToolTip": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\Core\\TimeUnit.cs",
+              "RelativeToolTip": "GAME\\Scripts\\Core\\TimeUnit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T18:23:20.715Z",
+              "WhenOpened": "2026-02-12T20:34:09.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Turn.cs",
+              "DocumentMoniker": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Turn.cs",
+              "RelativeDocumentMoniker": "GAME\\Scripts\\TurnSystem\\Turn.cs",
+              "ToolTip": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Turn.cs",
+              "RelativeToolTip": "GAME\\Scripts\\TurnSystem\\Turn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T03:10:51.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Week.cs",
               "DocumentMoniker": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Week.cs",
               "RelativeDocumentMoniker": "GAME\\Scripts\\TurnSystem\\Week.cs",
               "ToolTip": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Week.cs",
               "RelativeToolTip": "GAME\\Scripts\\TurnSystem\\Week.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-07T18:19:40.91Z",
               "EditorCaption": ""
@@ -57,6 +78,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Month.cs",
+              "DocumentMoniker": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Month.cs",
+              "RelativeDocumentMoniker": "GAME\\Scripts\\TurnSystem\\Month.cs",
+              "ToolTip": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Month.cs",
+              "RelativeToolTip": "GAME\\Scripts\\TurnSystem\\Month.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T18:23:20.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Timekeeper.cs",
               "DocumentMoniker": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\TurnSystem\\Timekeeper.cs",
               "RelativeDocumentMoniker": "GAME\\Scripts\\TurnSystem\\Timekeeper.cs",
@@ -69,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\fangi\\Documents\\GitHub\\GAME3033-ALT\\absoluteLoserTraining\\GAME\\Scripts\\Core\\GameManager.cs",
               "RelativeDocumentMoniker": "GAME\\Scripts\\Core\\GameManager.cs",
@@ -77,7 +111,8 @@
               "RelativeToolTip": "GAME\\Scripts\\Core\\GameManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T17:27:13.783Z"
+              "WhenOpened": "2026-02-07T17:27:13.783Z",
+              "EditorCaption": ""
             }
           ]
         }
