@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bdwcn316376e3"]
+
+[ext_resource type="Script" uid="uid://civlqn7july1c" path="res://GAME/Scripts/Core/GameManager.cs" id="1_8jjk6"]
+[ext_resource type="Script" uid="uid://ct0gjtq7jr58v" path="res://GAME/Scripts/TurnSystem/Timekeeper.cs" id="2_rceye"]
+
+[node name="GameManager" type="Node" unique_id=1851233439]
+script = ExtResource("1_8jjk6")
+
+[node name="Timekeeper" type="Node" parent="." unique_id=1333273821]
+script = ExtResource("2_rceye")

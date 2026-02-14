@@ -1,3 +1,22 @@
 [gd_scene format=3 uid="uid://hioj5entsuap"]
 
 [node name="Node2D" type="Node2D" unique_id=1629831020]
+
+[node name="BoxContainer" type="BoxContainer" parent="." unique_id=176073048]
+offset_left = 39.0
+offset_top = 26.0
+offset_right = 333.0
+offset_bottom = 66.0
+vertical = true
+
+[node name="month" type="Label" parent="BoxContainer" unique_id=975678857]
+layout_mode = 2
+text = "Month: "
+
+[node name="week" type="Label" parent="BoxContainer" unique_id=1725030716]
+layout_mode = 2
+text = "Week:"
+
+[node name="turn" type="Label" parent="BoxContainer" unique_id=550278623]
+layout_mode = 2
+text = "Turn:"
