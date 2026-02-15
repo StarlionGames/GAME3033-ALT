@@ -2,21 +2,65 @@
 
 [node name="Node2D" type="Node2D" unique_id=1629831020]
 
-[node name="BoxContainer" type="BoxContainer" parent="." unique_id=176073048]
+[node name="UI" type="Control" parent="." unique_id=298438147]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TimeContainer" type="BoxContainer" parent="UI" unique_id=176073048]
+layout_mode = 0
 offset_left = 39.0
 offset_top = 26.0
 offset_right = 333.0
-offset_bottom = 66.0
+offset_bottom = 103.0
 vertical = true
 
-[node name="month" type="Label" parent="BoxContainer" unique_id=975678857]
+[node name="month" type="Label" parent="UI/TimeContainer" unique_id=975678857]
 layout_mode = 2
 text = "Month: "
 
-[node name="week" type="Label" parent="BoxContainer" unique_id=1725030716]
+[node name="week" type="Label" parent="UI/TimeContainer" unique_id=1725030716]
 layout_mode = 2
 text = "Week:"
 
-[node name="turn" type="Label" parent="BoxContainer" unique_id=550278623]
+[node name="turn" type="Label" parent="UI/TimeContainer" unique_id=550278623]
 layout_mode = 2
 text = "Turn:"
+
+[node name="Training Options" type="BoxContainer" parent="UI" unique_id=257848055]
+layout_mode = 1
+offset_left = 504.0
+offset_top = 416.0
+offset_right = 705.0
+offset_bottom = 447.0
+pivot_offset = Vector2(101, 16)
+alignment = 1
+
+[node name="Button" type="Button" parent="UI/Training Options" unique_id=599371207]
+layout_mode = 2
+text = "fart"
+
+[node name="Button2" type="Button" parent="UI/Training Options" unique_id=686604738]
+layout_mode = 2
+text = "fart
+"
+
+[node name="Button3" type="Button" parent="UI/Training Options" unique_id=1045329766]
+layout_mode = 2
+text = "fart"
+
+[node name="Button4" type="Button" parent="UI/Training Options" unique_id=591996997]
+layout_mode = 2
+text = "fart"
+
+[node name="Button5" type="Button" parent="UI/Training Options" unique_id=224157062]
+layout_mode = 2
+text = "fart
+"
