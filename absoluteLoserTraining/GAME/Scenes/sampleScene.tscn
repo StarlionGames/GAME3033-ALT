@@ -1,66 +1,520 @@
 [gd_scene format=3 uid="uid://hioj5entsuap"]
 
-[node name="Node2D" type="Node2D" unique_id=1629831020]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4pmr6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
 
-[node name="UI" type="Control" parent="." unique_id=298438147]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ptfso"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(1, 1, 1, 0.4)
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xsonx"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+corner_detail = 5
+
+[node name="SampleUI" type="Control" unique_id=221982485]
 layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 
-[node name="TimeContainer" type="BoxContainer" parent="UI" unique_id=176073048]
-layout_mode = 0
-offset_left = 39.0
-offset_top = 26.0
-offset_right = 333.0
-offset_bottom = 103.0
+[node name="TurnIndicator" type="PanelContainer" parent="." unique_id=928069242]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.008680556
+anchor_top = -0.021604938
+anchor_right = -0.008680556
+anchor_bottom = -0.012345679
+offset_left = 40.0
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 128.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4pmr6")
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxContainer" type="BoxContainer" parent="TurnIndicator" unique_id=911578885]
+layout_mode = 2
+size_flags_vertical = 4
+alignment = 2
 vertical = true
 
-[node name="month" type="Label" parent="UI/TimeContainer" unique_id=975678857]
+[node name="turnNumber" type="Label" parent="TurnIndicator/BoxContainer" unique_id=220877105]
 layout_mode = 2
-text = "Month: "
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+text = "00"
+vertical_alignment = 1
 
-[node name="week" type="Label" parent="UI/TimeContainer" unique_id=1725030716]
+[node name="BturnsLeft" type="Label" parent="TurnIndicator/BoxContainer" unique_id=1388804760]
 layout_mode = 2
-text = "Week:"
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 12
+text = "turn(s) left"
+horizontal_alignment = 1
 
-[node name="turn" type="Label" parent="UI/TimeContainer" unique_id=550278623]
-layout_mode = 2
-text = "Turn:"
-
-[node name="Training Options" type="BoxContainer" parent="UI" unique_id=257848055]
+[node name="year_month" type="Label" parent="." unique_id=2023490725]
 layout_mode = 1
-offset_left = 504.0
-offset_top = 416.0
-offset_right = 705.0
-offset_bottom = 447.0
-pivot_offset = Vector2(101, 16)
+anchors_preset = -1
+anchor_left = -0.008680556
+anchor_top = -0.0061728396
+anchor_right = -0.008680556
+anchor_bottom = -0.015432099
+offset_left = 40.0
+offset_top = 24.0
+offset_right = 368.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 16
+text = "XXX Year | Month"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="GoalDisplay" type="ColorRect" parent="." unique_id=671359585]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -182.0
+offset_top = 30.0
+offset_right = -30.0
+offset_bottom = 254.0
+grow_horizontal = 0
+color = Color(0.578605, 0.5596054, 0.5643916, 1)
+
+[node name="EnergyBar" type="ProgressBar" parent="." unique_id=208102603]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -218.0
+offset_top = 393.0
+offset_right = 214.0
+offset_bottom = 413.0
+grow_horizontal = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_ptfso")
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="EnergyBar" unique_id=666165184]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -26.0
+offset_top = -30.0
+offset_right = 27.0
+offset_bottom = -7.0
+grow_horizontal = 2
+text = "Energy"
+
+[node name="StatHolder" type="PanelContainer" parent="." unique_id=1851738108]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -336.0
+offset_top = -228.0
+offset_right = 238.0
+offset_bottom = -153.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(325, 38)
+theme_override_styles/panel = SubResource("StyleBoxFlat_xsonx")
+
+[node name="MarginContainer" type="MarginContainer" parent="StatHolder" unique_id=766990024]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StatHolder/MarginContainer" unique_id=105931931]
+layout_mode = 2
 alignment = 1
 
-[node name="Button" type="Button" parent="UI/Training Options" unique_id=599371207]
+[node name="Stat" type="Control" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=1753003568]
+custom_minimum_size = Vector2(110, 0)
 layout_mode = 2
-text = "fart"
 
-[node name="Button2" type="Button" parent="UI/Training Options" unique_id=686604738]
-layout_mode = 2
-text = "fart
-"
+[node name="StatName" type="HBoxContainer" parent="StatHolder/MarginContainer/HBoxContainer/Stat" unique_id=1466044684]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 18.0
+grow_horizontal = 2
+alignment = 1
 
-[node name="Button3" type="Button" parent="UI/Training Options" unique_id=1045329766]
+[node name="ColorRect" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat/StatName" unique_id=1572885829]
+custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
-text = "fart"
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
-[node name="Button4" type="Button" parent="UI/Training Options" unique_id=591996997]
+[node name="Label" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat/StatName" unique_id=1054578952]
 layout_mode = 2
-text = "fart"
+text = "name"
+horizontal_alignment = 1
 
-[node name="Button5" type="Button" parent="UI/Training Options" unique_id=224157062]
+[node name="currValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat" unique_id=327509669]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -12.5
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 22
+text = "0000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="maxValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat" unique_id=1862061183]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = -21.749992
+offset_bottom = 0.5833435
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 14
+text = "/0000"
+horizontal_alignment = 1
+
+[node name="icon" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat" unique_id=874631020]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 26.25
+offset_right = 50.0
+offset_bottom = 66.25
+
+[node name="Stat2" type="Control" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=718657529]
+custom_minimum_size = Vector2(110, 0)
 layout_mode = 2
-text = "fart
-"
+
+[node name="StatName" type="HBoxContainer" parent="StatHolder/MarginContainer/HBoxContainer/Stat2" unique_id=889086724]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 18.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat2/StatName" unique_id=920178918]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat2/StatName" unique_id=1281218329]
+layout_mode = 2
+text = "name"
+horizontal_alignment = 1
+
+[node name="currValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat2" unique_id=407966264]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -12.5
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 22
+text = "0000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="maxValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat2" unique_id=2097439634]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = -21.749992
+offset_bottom = 0.5833435
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 14
+text = "/0000"
+horizontal_alignment = 1
+
+[node name="icon" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat2" unique_id=1731815521]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 26.25
+offset_right = 50.0
+offset_bottom = 66.25
+
+[node name="Stat3" type="Control" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=561886752]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 2
+
+[node name="StatName" type="HBoxContainer" parent="StatHolder/MarginContainer/HBoxContainer/Stat3" unique_id=1974713109]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 18.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat3/StatName" unique_id=388793526]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat3/StatName" unique_id=2095799300]
+layout_mode = 2
+text = "name"
+horizontal_alignment = 1
+
+[node name="currValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat3" unique_id=1292438012]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -12.5
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 22
+text = "0000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="maxValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat3" unique_id=1838834082]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = -21.749992
+offset_bottom = 0.5833435
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 14
+text = "/0000"
+horizontal_alignment = 1
+
+[node name="icon" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat3" unique_id=1443656053]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 26.25
+offset_right = 50.0
+offset_bottom = 66.25
+
+[node name="Stat4" type="Control" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=251903297]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 2
+
+[node name="StatName" type="HBoxContainer" parent="StatHolder/MarginContainer/HBoxContainer/Stat4" unique_id=652951094]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 18.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat4/StatName" unique_id=1618508720]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat4/StatName" unique_id=480380107]
+layout_mode = 2
+text = "name"
+horizontal_alignment = 1
+
+[node name="currValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat4" unique_id=1840187226]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -12.5
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 22
+text = "0000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="maxValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat4" unique_id=1082555704]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = -21.749992
+offset_bottom = 0.5833435
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 14
+text = "/0000"
+horizontal_alignment = 1
+
+[node name="icon" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat4" unique_id=377555643]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 26.25
+offset_right = 50.0
+offset_bottom = 66.25
+
+[node name="Stat5" type="Control" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=1067394745]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 2
+
+[node name="StatName" type="HBoxContainer" parent="StatHolder/MarginContainer/HBoxContainer/Stat5" unique_id=1737797223]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 18.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat5/StatName" unique_id=2053684384]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat5/StatName" unique_id=1305900656]
+layout_mode = 2
+text = "name"
+horizontal_alignment = 1
+
+[node name="currValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat5" unique_id=1678841572]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -12.5
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 22
+text = "0000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="maxValue" type="Label" parent="StatHolder/MarginContainer/HBoxContainer/Stat5" unique_id=1812420722]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = -21.749992
+offset_bottom = 0.5833435
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 14
+text = "/0000"
+horizontal_alignment = 1
+
+[node name="icon" type="ColorRect" parent="StatHolder/MarginContainer/HBoxContainer/Stat5" unique_id=905657493]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 26.25
+offset_right = 50.0
+offset_bottom = 66.25
+
+[node name="SkillPts" type="PanelContainer" parent="." unique_id=1495655156]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 247.0
+offset_top = -228.0
+offset_right = 347.0
+offset_bottom = -153.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xsonx")
+
+[node name="MarginContainer" type="MarginContainer" parent="SkillPts" unique_id=1850200248]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SkillPts/MarginContainer" unique_id=1331888325]
+layout_mode = 2
+
+[node name="name" type="Label" parent="SkillPts/MarginContainer/VBoxContainer" unique_id=281763594]
+layout_mode = 2
+size_flags_vertical = 0
+text = "Skill Pts"
+horizontal_alignment = 1
+
+[node name="value" type="Label" parent="SkillPts/MarginContainer/VBoxContainer" unique_id=1447187128]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 24
+text = "000"
+horizontal_alignment = 1
+vertical_alignment = 1
