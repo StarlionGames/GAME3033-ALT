@@ -1,18 +1,21 @@
 using Godot;
 using System;
 
-public partial class Stat
+[GlobalClass]
+public partial class Stat : Resource
 {
     public string Name { get; private set; }
+    public StatType _Type { get; private set; }
     public int minValue = 0;
     public int maxValue;
     public int Value { get; private set; }
 
     public Action<int> OnValueChanged;
 
-    public Stat(string name, int maxVal, int startVal)
+    public Stat(StatType type, int maxVal, int startVal)
     {
-        Name = name;
+        _Type = type;
+        Name = type.ToString();
         maxValue = maxVal;
         Value = startVal;
     }

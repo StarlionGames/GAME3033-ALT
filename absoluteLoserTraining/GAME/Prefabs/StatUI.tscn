@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://c3jkby02gv1bg"]
+
+[ext_resource type="Script" uid="uid://780gx5kfnltd" path="res://GAME/Scripts/UI/Training/StatDisplay.cs" id="1_l616h"]
+
+[node name="Stat" type="Control" unique_id=953450672]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l616h")
+namePath = NodePath("StatName/Label")
+currPath = NodePath("currValue")
+maxPath = NodePath("maxValue")
+
+[node name="StatName" type="HBoxContainer" parent="." unique_id=1953864029]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 18.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="StatName" unique_id=60033768]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="StatName" unique_id=686121186]
+layout_mode = 2
+text = "name"
+horizontal_alignment = 1
+
+[node name="currValue" type="Label" parent="." unique_id=934540174]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -82.0
+offset_top = -12.5
+offset_right = -9.0
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 22
+text = "0000"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="maxValue" type="Label" parent="." unique_id=2014853773]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -72.0
+offset_top = -21.75
+offset_right = -9.0
+offset_bottom = 0.583374
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 14
+text = "/0000"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="icon" type="ColorRect" parent="." unique_id=1151115276]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 26.25
+offset_right = 50.0
+offset_bottom = 66.25
