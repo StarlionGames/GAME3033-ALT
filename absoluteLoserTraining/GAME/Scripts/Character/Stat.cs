@@ -1,8 +1,7 @@
 using Godot;
 using System;
 
-[GlobalClass]
-public partial class Stat : Resource
+public partial class Stat
 {
     public string Name { get; private set; }
     public StatType _Type { get; private set; }

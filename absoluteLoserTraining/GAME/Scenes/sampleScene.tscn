@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://hioj5entsuap"]
 
 [ext_resource type="PackedScene" uid="uid://c3jkby02gv1bg" path="res://GAME/Prefabs/StatUI.tscn" id="1_ptfso"]
+[ext_resource type="PackedScene" uid="uid://hlidrqku0y6c" path="res://GAME/Prefabs/stat_button.tscn" id="2_xsonx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4pmr6"]
 content_margin_left = 0.0
@@ -41,76 +42,79 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TurnIndicator" type="PanelContainer" parent="." unique_id=928069242]
+[node name="Display" type="Control" parent="." unique_id=1944025386]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TurnIndicator" type="PanelContainer" parent="Display" unique_id=928069242]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.008680556
 anchor_top = -0.021604938
 anchor_right = -0.008680556
 anchor_bottom = -0.012345679
-offset_left = 40.0
-offset_top = 64.0
-offset_right = 128.0
-offset_bottom = 128.0
+offset_left = 30.347221
+offset_top = 50.864197
+offset_right = 118.34722
+offset_bottom = 114.8642
 theme_override_styles/panel = SubResource("StyleBoxFlat_4pmr6")
-metadata/_edit_use_anchors_ = true
 
-[node name="BoxContainer" type="BoxContainer" parent="TurnIndicator" unique_id=911578885]
+[node name="BoxContainer" type="BoxContainer" parent="Display/TurnIndicator" unique_id=911578885]
 layout_mode = 2
 size_flags_vertical = 4
 alignment = 2
 vertical = true
 
-[node name="turnNumber" type="Label" parent="TurnIndicator/BoxContainer" unique_id=220877105]
+[node name="turnNumber" type="Label" parent="Display/TurnIndicator/BoxContainer" unique_id=220877105]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 24
 text = "00"
 vertical_alignment = 1
 
-[node name="BturnsLeft" type="Label" parent="TurnIndicator/BoxContainer" unique_id=1388804760]
+[node name="BturnsLeft" type="Label" parent="Display/TurnIndicator/BoxContainer" unique_id=1388804760]
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 12
 text = "turn(s) left"
 horizontal_alignment = 1
 
-[node name="year_month" type="Label" parent="." unique_id=2023490725]
+[node name="year_month" type="Label" parent="Display" unique_id=2023490725]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.008680556
 anchor_top = -0.015432099
 anchor_right = -0.008680556
 anchor_bottom = -0.015432099
-offset_left = 40.0
-offset_top = 24.0
-offset_right = 368.0
-offset_bottom = 64.0
+offset_left = 30.347221
+offset_top = 14.617284
+offset_right = 358.34723
+offset_bottom = 54.617283
 theme_override_font_sizes/font_size = 16
 text = "XXX Year | Month"
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
-[node name="GoalDisplay" type="ColorRect" parent="." unique_id=671359585]
+[node name="GoalDisplay" type="ColorRect" parent="Display" unique_id=671359585]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -182.0
+offset_left = 930.0
 offset_top = 30.0
-offset_right = -30.0
+offset_right = 1082.0
 offset_bottom = 254.0
 grow_horizontal = 0
 color = Color(0.578605, 0.5596054, 0.5643916, 1)
 
-[node name="EnergyBar" type="ProgressBar" parent="." unique_id=208102603]
+[node name="EnergyBar" type="ProgressBar" parent="Display" unique_id=208102603]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -218.0
+offset_left = 338.0
 offset_top = 393.0
-offset_right = 214.0
+offset_right = 770.0
 offset_bottom = 413.0
 grow_horizontal = 2
 theme_override_styles/fill = SubResource("StyleBoxFlat_ptfso")
@@ -118,7 +122,7 @@ value = 50.0
 rounded = true
 show_percentage = false
 
-[node name="Label" type="Label" parent="EnergyBar" unique_id=666165184]
+[node name="Label" type="Label" parent="Display/EnergyBar" unique_id=666165184]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -130,87 +134,131 @@ offset_bottom = -7.0
 grow_horizontal = 2
 text = "Energy"
 
-[node name="StatHolder" type="PanelContainer" parent="." unique_id=1851738108]
+[node name="StatHolder" type="PanelContainer" parent="Display" unique_id=1851738108]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -336.0
-offset_top = -228.0
-offset_right = 238.0
-offset_bottom = -153.0
+offset_left = 220.0
+offset_top = 380.0
+offset_right = 794.0
+offset_bottom = 455.0
 grow_horizontal = 2
 grow_vertical = 0
 pivot_offset = Vector2(325, 38)
 theme_override_styles/panel = SubResource("StyleBoxFlat_xsonx")
 
-[node name="MarginContainer" type="MarginContainer" parent="StatHolder" unique_id=766990024]
+[node name="MarginContainer" type="MarginContainer" parent="Display/StatHolder" unique_id=766990024]
 layout_mode = 2
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 4
 theme_override_constants/margin_bottom = 4
 
-[node name="HBoxContainer" type="HBoxContainer" parent="StatHolder/MarginContainer" unique_id=105931931]
+[node name="HBoxContainer" type="HBoxContainer" parent="Display/StatHolder/MarginContainer" unique_id=105931931]
 layout_mode = 2
 alignment = 1
 
-[node name="Stat" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=953450672 instance=ExtResource("1_ptfso")]
+[node name="Stat" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=953450672 instance=ExtResource("1_ptfso")]
 layout_mode = 2
 
-[node name="Stat2" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=466712904 instance=ExtResource("1_ptfso")]
+[node name="Stat2" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=466712904 instance=ExtResource("1_ptfso")]
 layout_mode = 2
 type = 1
 
-[node name="Stat3" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=849931737 instance=ExtResource("1_ptfso")]
+[node name="Stat3" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=849931737 instance=ExtResource("1_ptfso")]
 layout_mode = 2
 type = 2
 
-[node name="Stat4" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=1069156862 instance=ExtResource("1_ptfso")]
+[node name="Stat4" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=1069156862 instance=ExtResource("1_ptfso")]
 layout_mode = 2
 type = 3
 
-[node name="Stat5" parent="StatHolder/MarginContainer/HBoxContainer" unique_id=547075187 instance=ExtResource("1_ptfso")]
+[node name="Stat5" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=547075187 instance=ExtResource("1_ptfso")]
 layout_mode = 2
 type = 4
 
-[node name="SkillPts" type="PanelContainer" parent="." unique_id=1495655156]
+[node name="SkillPts" type="PanelContainer" parent="Display" unique_id=1495655156]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 247.0
-offset_top = -228.0
-offset_right = 347.0
-offset_bottom = -153.0
+offset_left = 803.0
+offset_top = 380.0
+offset_right = 903.0
+offset_bottom = 455.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_xsonx")
 
-[node name="MarginContainer" type="MarginContainer" parent="SkillPts" unique_id=1850200248]
+[node name="MarginContainer" type="MarginContainer" parent="Display/SkillPts" unique_id=1850200248]
 layout_mode = 2
 theme_override_constants/margin_left = 3
 theme_override_constants/margin_top = 3
 theme_override_constants/margin_right = 3
 theme_override_constants/margin_bottom = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="SkillPts/MarginContainer" unique_id=1331888325]
+[node name="VBoxContainer" type="VBoxContainer" parent="Display/SkillPts/MarginContainer" unique_id=1331888325]
 layout_mode = 2
 
-[node name="name" type="Label" parent="SkillPts/MarginContainer/VBoxContainer" unique_id=281763594]
+[node name="name" type="Label" parent="Display/SkillPts/MarginContainer/VBoxContainer" unique_id=281763594]
 layout_mode = 2
 size_flags_vertical = 0
 text = "Skill Pts"
 horizontal_alignment = 1
 
-[node name="value" type="Label" parent="SkillPts/MarginContainer/VBoxContainer" unique_id=1447187128]
+[node name="value" type="Label" parent="Display/SkillPts/MarginContainer/VBoxContainer" unique_id=1447187128]
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_font_sizes/font_size = 24
 text = "000"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Interface" type="Control" parent="." unique_id=576823822]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Interface" unique_id=604888019]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -118.0
+offset_bottom = -28.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="StatButton" parent="Interface/HBoxContainer" unique_id=2006932363 instance=ExtResource("2_xsonx")]
+custom_minimum_size = Vector2(90, 90)
+layout_mode = 2
+
+[node name="StatButton2" parent="Interface/HBoxContainer" unique_id=839008980 instance=ExtResource("2_xsonx")]
+custom_minimum_size = Vector2(90, 90)
+layout_mode = 2
+type = 1
+
+[node name="StatButton3" parent="Interface/HBoxContainer" unique_id=1239368075 instance=ExtResource("2_xsonx")]
+custom_minimum_size = Vector2(90, 90)
+layout_mode = 2
+type = 2
+
+[node name="StatButton4" parent="Interface/HBoxContainer" unique_id=825908204 instance=ExtResource("2_xsonx")]
+custom_minimum_size = Vector2(90, 90)
+layout_mode = 2
+type = 3
+
+[node name="StatButton5" parent="Interface/HBoxContainer" unique_id=2033689041 instance=ExtResource("2_xsonx")]
+custom_minimum_size = Vector2(90, 90)
+layout_mode = 2
+type = 4
