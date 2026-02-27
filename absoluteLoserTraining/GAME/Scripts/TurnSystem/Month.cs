@@ -5,25 +5,19 @@ using System.Collections.Generic;
 public class Month : TimeUnit
 {
     public string Name;
-    public int NumOfWeeks = 3;
-    public List<Week> ListOfWeeks = new List<Week>();
-
+    public Week week;
+    public int index = 1; // replace this with actual calendar
     public Month(int number, string name)
     {
-        this.Number = number;
-        this.Name = name;
+        Number = number;
+        Name = name;
 
-        GenerateListOfWeeks();
+        week = new Week(1);
     }
 
-    public void GenerateListOfWeeks()
+    public void Reset(int monthnum)
     {
-        if (ListOfWeeks.Count > 0) { return; }
-
-        for (int i = 0; i < NumOfWeeks; i++)
-        {
-            Week newWeek = new Week(i);
-            ListOfWeeks.Add(newWeek);
-        }
+        Number = monthnum;
+        week.Reset(index);
     }
 }

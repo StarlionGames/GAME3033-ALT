@@ -107,118 +107,6 @@ offset_bottom = 254.0
 grow_horizontal = 0
 color = Color(0.578605, 0.5596054, 0.5643916, 1)
 
-[node name="EnergyBar" type="ProgressBar" parent="Display" unique_id=208102603]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = 338.0
-offset_top = 393.0
-offset_right = 770.0
-offset_bottom = 413.0
-grow_horizontal = 2
-theme_override_styles/fill = SubResource("StyleBoxFlat_ptfso")
-value = 50.0
-rounded = true
-show_percentage = false
-
-[node name="Label" type="Label" parent="Display/EnergyBar" unique_id=666165184]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -26.0
-offset_top = -30.0
-offset_right = 27.0
-offset_bottom = -7.0
-grow_horizontal = 2
-text = "Energy"
-
-[node name="StatHolder" type="PanelContainer" parent="Display" unique_id=1851738108]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = 220.0
-offset_top = 380.0
-offset_right = 794.0
-offset_bottom = 455.0
-grow_horizontal = 2
-grow_vertical = 0
-pivot_offset = Vector2(325, 38)
-theme_override_styles/panel = SubResource("StyleBoxFlat_xsonx")
-
-[node name="MarginContainer" type="MarginContainer" parent="Display/StatHolder" unique_id=766990024]
-layout_mode = 2
-theme_override_constants/margin_left = 4
-theme_override_constants/margin_top = 4
-theme_override_constants/margin_right = 4
-theme_override_constants/margin_bottom = 4
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Display/StatHolder/MarginContainer" unique_id=105931931]
-layout_mode = 2
-alignment = 1
-
-[node name="Stat" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=953450672 instance=ExtResource("1_ptfso")]
-layout_mode = 2
-
-[node name="Stat2" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=466712904 instance=ExtResource("1_ptfso")]
-layout_mode = 2
-type = 1
-
-[node name="Stat3" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=849931737 instance=ExtResource("1_ptfso")]
-layout_mode = 2
-type = 2
-
-[node name="Stat4" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=1069156862 instance=ExtResource("1_ptfso")]
-layout_mode = 2
-type = 3
-
-[node name="Stat5" parent="Display/StatHolder/MarginContainer/HBoxContainer" unique_id=547075187 instance=ExtResource("1_ptfso")]
-layout_mode = 2
-type = 4
-
-[node name="SkillPts" type="PanelContainer" parent="Display" unique_id=1495655156]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = 803.0
-offset_top = 380.0
-offset_right = 903.0
-offset_bottom = 455.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_xsonx")
-
-[node name="MarginContainer" type="MarginContainer" parent="Display/SkillPts" unique_id=1850200248]
-layout_mode = 2
-theme_override_constants/margin_left = 3
-theme_override_constants/margin_top = 3
-theme_override_constants/margin_right = 3
-theme_override_constants/margin_bottom = 3
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Display/SkillPts/MarginContainer" unique_id=1331888325]
-layout_mode = 2
-
-[node name="name" type="Label" parent="Display/SkillPts/MarginContainer/VBoxContainer" unique_id=281763594]
-layout_mode = 2
-size_flags_vertical = 0
-text = "Skill Pts"
-horizontal_alignment = 1
-
-[node name="value" type="Label" parent="Display/SkillPts/MarginContainer/VBoxContainer" unique_id=1447187128]
-layout_mode = 2
-size_flags_vertical = 1
-theme_override_font_sizes/font_size = 24
-text = "000"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Interface" type="Control" parent="." unique_id=576823822]
 layout_mode = 1
 anchors_preset = 15
@@ -262,3 +150,115 @@ type = 3
 custom_minimum_size = Vector2(90, 90)
 layout_mode = 2
 type = 4
+
+[node name="EnergyBar" type="ProgressBar" parent="Interface" unique_id=208102603]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -218.0
+offset_top = 393.0
+offset_right = 214.0
+offset_bottom = 413.0
+grow_horizontal = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_ptfso")
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="Interface/EnergyBar" unique_id=666165184]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -26.0
+offset_top = -30.0
+offset_right = 27.0
+offset_bottom = -7.0
+grow_horizontal = 2
+text = "Energy"
+
+[node name="StatHolder" type="PanelContainer" parent="Interface" unique_id=1851738108]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -336.0
+offset_top = -228.0
+offset_right = 238.0
+offset_bottom = -153.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(325, 38)
+theme_override_styles/panel = SubResource("StyleBoxFlat_xsonx")
+
+[node name="MarginContainer" type="MarginContainer" parent="Interface/StatHolder" unique_id=766990024]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Interface/StatHolder/MarginContainer" unique_id=105931931]
+layout_mode = 2
+alignment = 1
+
+[node name="Stat" parent="Interface/StatHolder/MarginContainer/HBoxContainer" unique_id=953450672 instance=ExtResource("1_ptfso")]
+layout_mode = 2
+
+[node name="Stat2" parent="Interface/StatHolder/MarginContainer/HBoxContainer" unique_id=466712904 instance=ExtResource("1_ptfso")]
+layout_mode = 2
+type = 1
+
+[node name="Stat3" parent="Interface/StatHolder/MarginContainer/HBoxContainer" unique_id=849931737 instance=ExtResource("1_ptfso")]
+layout_mode = 2
+type = 2
+
+[node name="Stat4" parent="Interface/StatHolder/MarginContainer/HBoxContainer" unique_id=1069156862 instance=ExtResource("1_ptfso")]
+layout_mode = 2
+type = 3
+
+[node name="Stat5" parent="Interface/StatHolder/MarginContainer/HBoxContainer" unique_id=547075187 instance=ExtResource("1_ptfso")]
+layout_mode = 2
+type = 4
+
+[node name="SkillPts" type="PanelContainer" parent="Interface" unique_id=1495655156]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 247.0
+offset_top = -228.0
+offset_right = 347.0
+offset_bottom = -153.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xsonx")
+
+[node name="MarginContainer" type="MarginContainer" parent="Interface/SkillPts" unique_id=1850200248]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Interface/SkillPts/MarginContainer" unique_id=1331888325]
+layout_mode = 2
+
+[node name="name" type="Label" parent="Interface/SkillPts/MarginContainer/VBoxContainer" unique_id=281763594]
+layout_mode = 2
+size_flags_vertical = 0
+text = "Skill Pts"
+horizontal_alignment = 1
+
+[node name="value" type="Label" parent="Interface/SkillPts/MarginContainer/VBoxContainer" unique_id=1447187128]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 24
+text = "000"
+horizontal_alignment = 1
+vertical_alignment = 1

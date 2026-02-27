@@ -1,6 +1,5 @@
 using Godot;
 using System;
-using System.Collections.Generic;
 
 public class Turn : TimeUnit
 {
@@ -9,5 +8,19 @@ public class Turn : TimeUnit
 	public Turn(int number)
 	{
 		Number = number;
+	}
+
+	public void UseTurn()
+	{
+		if (!TurnCompleted)
+		{
+			TurnCompleted = true;
+			Finish();
+		}
+	}
+	public void Reset(int num)
+	{
+		Number = num;
+		TurnCompleted = false; 
 	}
 }

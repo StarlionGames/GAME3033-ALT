@@ -7,4 +7,7 @@ public abstract class TimeUnit
 
     public Action Start;
     public Action End;
+
+    public void Begin() { Start?.Invoke(); }
+    public void Finish() { End?.Invoke(); }
 }

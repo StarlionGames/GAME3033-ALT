@@ -4,11 +4,22 @@ using System;
 /// The bottom layer of everything in the game. controls audio and gameplay errors.
 /// </summary>
 public partial class GameManager : Node
-{	
+{
+	public static GameManager Instance;
+	public Timekeeper timekeeper;
 	
-	
+	public static Action<GameManager> OnReady;
+
 	public override void _Ready(){
-		GD.Print("GameManager ready");
+		if(Instance == null)
+		{
+			Instance = this;
+		}
+
+		timekeeper = GetNode<Timekeeper>("Timekeeper");
+
+		GD.Print("Game manager ready");
+		OnReady?.Invoke(this);
 	}
 	
 	public void DoSomething(){

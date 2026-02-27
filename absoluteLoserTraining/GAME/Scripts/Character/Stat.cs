@@ -4,6 +4,7 @@ using System;
 public partial class Stat
 {
     public string Name { get; private set; }
+    public string Nickname { get; private set; }
     public StatType _Type { get; private set; }
     public int minValue = 0;
     public int maxValue;
@@ -15,6 +16,7 @@ public partial class Stat
     {
         _Type = type;
         Name = type.ToString();
+        Nickname = GetNickname(type);
         maxValue = maxVal;
         Value = startVal;
     }
@@ -26,12 +28,23 @@ public partial class Stat
         
         OnValueChanged?.Invoke(Value);
     }
-
     public void LowerStat(int subtract)
     {
         Value -= subtract;
         if (Value < minValue) Value = minValue;
 
         OnValueChanged?.Invoke(Value);
+    }
+    public string GetNickname(StatType type)
+    {
+        switch (type)
+        {
+            case StatType.Popularity: return "POP";
+            case StatType.Appearance: return "APR";
+            case StatType.Athletics: return "ATH";
+            case StatType.Poise: return "PSE";
+            case StatType.Intelligence: return "INT";
+            default: return "NON";
+        }
     }
 }
