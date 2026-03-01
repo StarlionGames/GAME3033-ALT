@@ -7,6 +7,7 @@ public partial class GameManager : Node
 {
 	public static GameManager Instance;
 	public Timekeeper timekeeper;
+	public Character character;
 	
 	public static Action<GameManager> OnReady;
 
@@ -17,6 +18,7 @@ public partial class GameManager : Node
 		}
 
 		timekeeper = GetNode<Timekeeper>("Timekeeper");
+		character = GetNode<Character>("Character");
 
 		GD.Print("Game manager ready");
 		OnReady?.Invoke(this);

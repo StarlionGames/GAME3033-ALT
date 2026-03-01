@@ -12,7 +12,7 @@ public partial class StatDisplay : Control
 
     public override void _Ready()
     {
-        statToDisplay = Character.Instance.GetStatByType(type);
+        statToDisplay = GameManager.Instance.character.GetStatByType(type);
         statToDisplay.OnValueChanged += UpdateValue;
 
         name = GetNode<Label>(namePath);
