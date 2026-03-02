@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://ct0gjtq7jr58v" path="res://GAME/Scripts/Training/TurnSystem/Timekeeper.cs" id="2_rceye"]
 [ext_resource type="PackedScene" uid="uid://bdmqp2xohu1fb" path="res://GAME/Prefabs/character.tscn" id="3_3ldou"]
 [ext_resource type="Script" uid="uid://bb1xln2c468y" path="res://GAME/Scripts/Training/TrainingManager.cs" id="4_6n5gu"]
+[ext_resource type="Script" uid="uid://tnvv6tti3wkv" path="res://GAME/Scripts/Training/EnergySystem.cs" id="5_8wxih"]
 
 [node name="GameManager" type="Node" unique_id=1851233439]
 script = ExtResource("1_8jjk6")
@@ -15,3 +16,6 @@ script = ExtResource("2_rceye")
 
 [node name="TrainingManager" type="Node" parent="." unique_id=896127401]
 script = ExtResource("4_6n5gu")
+
+[node name="Energy" type="Node" parent="TrainingManager" unique_id=1221264271]
+script = ExtResource("5_8wxih")

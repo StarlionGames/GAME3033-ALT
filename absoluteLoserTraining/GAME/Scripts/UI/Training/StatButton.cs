@@ -16,8 +16,11 @@ public partial class StatButton : ActionButton
 
     public override void OnPressed()
     {
-        //manager.energy.LowerEnergy(25); // replace with smarter system
-        _stat.RaiseStat(5); 
+        if (!manager.energy.DidTrainingFail())
+        {
+            manager.energy.Training(type);
+            _stat.RaiseStat(5);
+        }
         base.OnPressed();
     }
 }
