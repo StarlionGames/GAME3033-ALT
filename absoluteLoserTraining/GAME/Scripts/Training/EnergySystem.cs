@@ -33,16 +33,16 @@ public partial class EnergySystem : Node
     }
 
     public void Training(StatType type)
-    {
+    {  
         int baseEnergyLoss = 15;
         float mult = 0;
 
         switch (type)
         {
-            case StatType.Popularity: mult = 0.4f; break;
-            case StatType.Appearance: mult = 0.2f; break;
+            case StatType.Popularity: mult = 0.3f; break;
+            case StatType.Appearance: mult = 0.1f; break;
             case StatType.Athletics: mult = 0.75f; break;
-            case StatType.Poise: mult = 0.6f; break;
+            case StatType.Poise: mult = 0.5f; break;
             case StatType.Intelligence: _energy.RaiseEnergy(5); return;
 
             default: break;

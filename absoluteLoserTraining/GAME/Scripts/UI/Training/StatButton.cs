@@ -19,7 +19,7 @@ public partial class StatButton : ActionButton
         if (!manager.energy.DidTrainingFail())
         {
             manager.energy.Training(type);
-            _stat.RaiseStat(5);
+            manager.statGain.RandomStatGain(type);
         }
         base.OnPressed();
     }
