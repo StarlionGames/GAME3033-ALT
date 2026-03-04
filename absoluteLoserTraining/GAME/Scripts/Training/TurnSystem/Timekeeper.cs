@@ -2,7 +2,9 @@ using Godot;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-
+/// <summary>
+/// advances turns, maintains the turn counter, raises signals when time changes
+/// </summary>
 public partial class Timekeeper : Node
 {
     public Month month;
@@ -14,7 +16,7 @@ public partial class Timekeeper : Node
 
     int totalTurnCounter = 1;
 
-    Dictionary<int, Action> events = new Dictionary<int, Action>(); // wip, add actual event class later
+    public static Action<int> OnTurnPassed;
     public static Action<Timekeeper> OnReady;
 
     public override void _Ready()
@@ -48,6 +50,7 @@ public partial class Timekeeper : Node
             month.Reset(MonthNumber);
         }
 
+        OnTurnPassed?.Invoke(totalTurnCounter);
         //DebuggingMessage();
     }
 

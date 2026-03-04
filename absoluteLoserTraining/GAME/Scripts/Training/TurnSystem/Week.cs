@@ -7,6 +7,8 @@ public class Week : TimeUnit
 	public List<Turn> TurnsInWeek = new List<Turn>();
 	public Turn currTurn;
 
+	// TODO: Add enum for time of week (early, mid, late)
+
 	public int index;
 	public Week(int number)
 	{

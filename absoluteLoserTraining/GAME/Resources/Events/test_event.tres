@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://n6hk5mkucvka"]
+
+[ext_resource type="Script" uid="uid://d4lau8y343246" path="res://GAME/Scripts/Training/EventSystem/Event.cs" id="1_2l5ky"]
+
+[resource]
+script = ExtResource("1_2l5ky")
+EventName = "test"
+metadata/_custom_type_script = "uid://d4lau8y343246"
